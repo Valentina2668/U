@@ -1,0 +1,23 @@
+.icon::before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+}
+
+.frog::before {
+  background-image: url(icons/frog\ white.png);
+}
+
+.frog:hover::before {
+  background-image: url(icons/frog\ black.png);
+}
+
+.plates::before {
+  background-image: url(icons/plate\ white.png);
+}
+
+.plates:hover::before {
+  background-image: url(icons/plate\ black.png);
+}/*# sourceMappingURL=icon.css.map */

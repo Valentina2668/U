@@ -8,6 +8,7 @@
     <link href="WinterStyles.css" rel="stylesheet">
     <link href="buttons.css" rel="stylesheet">
     <title>Winter</title>
+    <link href="icon.css" rel="stylesheet">
 
 </head>
 
@@ -26,13 +27,12 @@
             <div class="menu-fly">
 
                 <div class="menu-button">
-                    <a href="https://flexboxfroggy.com/#ru" target="blank">
-                        <img class="icon frog" />
+                    <a href="https://flexboxfroggy.com/#ru" target="blank" class="icon frog">
+
                         Frogs </a>
                 </div>
                 <div class="menu-button">
-                    <a href="https://flukeout.github.io/" target="blank">
-                        <img class="icon plates" />
+                    <a href="https://flukeout.github.io/" target="blank" class="icon plates">
                         Plates</a>
                 </div>
                 <div class="menu-button">
@@ -54,10 +54,13 @@
                 <div class="menu-button">
                     <a href="#hotKey">HotKey</a>
                 </div>
+                <div class="menu-button">
+                    <a href="#form">Form</a>
+                </div>
             </div>
         </div>
 
-        <div class="gallery-page">
+        <div class="gallery-page" id="Gallery">
             <div class="items-container" id="PictureFirst">
                 <div class="name">Winter
                 </div>
@@ -409,31 +412,110 @@
 
         </div>
 
+        <div class="hot-key-block page" id="hotKey">
+            <div class="hot-key">
+                ctrl + S
+            </div>
+            <div class="hot-key">
+                alt + tab
+            </div>
+            <div class="hot-key">
+                F5
+            </div>
+            <div class="hot-key">
+                alt + shift + F
+            </div>
+            <div class="hot-key">
+                ctrl + space [tab]
+            </div>
+            <div class="hot-key">
+                ctrl + F [F3]
+            </div>
+            <div class="hot-key">
+                ctrl + H
+            </div>
+        </div>
+        <div class="newpage" id="form">
+            <div class="wish">Новогоднее желание</div>
+            <form>
+                <div class="liketoget">What would you like to get?
+                    <div>
+                        <select>
+                            <optgroup label="Options">
+                                <option>Fir tree</option>
+                                <option>Snow</option>
+                                <option>Presents</option>
+                                <option disabled="disabled">Nothing</option>
+                                <option selected="selected">Order Father Frost</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="expect"> When are you expecting to get it?
+                    <div>
+                        <input type="date">
+                    </div>
 
+                </div>
+                <div> Who are you?
+                </div>
+                <div class="youare">
+                    <label>
+                        <input type="radio" name="sex" checked="checked">Female
+                    </label>
+                    <label>
+                        <input type="radio" name="sex">Male
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="text" placeholder="Name" class="text">Name
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="number" placeholder="Age"> Age
+                    </label>
+                    <div>
+                        <label>
+                            <input type="time" placeholder="Имя">Time for delivery
+                        </label>
+                    </div>
+                </div>
+                <div> What do you need for perfect New Year?
+                    <div>
+                        <label>
+                            <input type="checkbox" name="sweets">Sweets
+                        </label>
+                        <label><input type="checkbox" name="olive" checked="checked" disabled="disabled"> Olive</label>
+                    </div>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" name="candy" checked="checked">Candy
+                    </label>
+                </div>
+                <div>Any other suggestions?
+                    <div>
+                        <label>
+                            <input type="text" placeholder="Text area">Text Area
+                        </label>
+                    </div>
+                </div>
+                <div>
+
+                    <input type="range" min="30" max="100" step="10">
+                </div>
+                <div>
+                    <input type="color" class="inputcolor" value="#8b129b">
+                </div>
+
+
+
+            </form>
+        </div>
     </div>
-    <div class="hot-key-block page" id="hotKey">
-        <div class="hot-key">
-            ctrl + S
-        </div>
-        <div class="hot-key">
-            alt + tab
-        </div>
-        <div class="hot-key">
-            F5
-        </div>
-        <div class="hot-key">
-            alt + shift + F
-        </div>
-        <div class="hot-key">
-            ctrl + space [tab]
-        </div>
-        <div class="hot-key">
-            ctrl + F [F3]
-        </div>
-        <div class="hot-key">
-            ctrl + H
-        </div>
-    </div>
+
 </body>
 
 </html>

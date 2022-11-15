@@ -1,0 +1,139 @@
+$border-color-container: #ff002f;
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.logo {
+    position: absolute;
+    left: 173px;
+    top: 17px;
+
+
+    img {
+        width: 30px;
+    }
+}
+
+
+.content {
+    display: flex;
+
+    .menu {
+        width: 200px;
+
+        .menu-fly {
+            position: fixed;
+
+            .menu-button {
+
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background-size: contain;
+                }
+
+                .frog {
+                    background-image: url(icons/frog\ white.png);
+                }
+
+                .frog:hover {
+                    background-image: url(icons/frog\ black.png);
+                }
+
+                .plates {
+                    background-image: url(icons/plate\ white.png);
+                }
+
+                .plates:hover {
+                    background-image: url(icons/plate\ black.png);
+                }
+
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+.gallery-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+
+    .items-container {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px $border-color-container;
+        border-radius: 6px;
+        margin: 5px;
+
+        .name {
+            display: flex;
+            justify-content: center;
+            border-bottom: solid 1px $border-color-container;
+        }
+
+        .image-and-descrintion {
+            display: flex;
+            flex: 1;
+
+            img {
+                display: flex;
+                max-width: 200px;
+                height: auto;
+                border-right: solid 1px $border-color-container;
+
+            }
+
+            /*img:hover {
+                max-width: 100%;
+                z-index: 10;
+            }*/
+
+            .description {
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+            }
+
+        }
+
+        .additional-buttons {
+            display: flex;
+            justify-content: space-around;
+            border-top: solid 1px $border-color-container;
+            flex: 1;
+
+            .action {
+                display: flex;
+                justify-content: center;
+                background-color: bisque;
+                flex: 1;
+            }
+
+            .action:first-child {
+                background-color: aqua;
+                border-bottom-left-radius: 6px;
+                border-right: $border-color-container solid 1px;
+            }
+
+            .action:last-child {
+                background-color: blueviolet;
+                border-bottom-right-radius: 6px;
+                border-left: $border-color-container solid 1px;
+            }
+        }
+    }
+}

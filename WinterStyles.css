@@ -1,0 +1,102 @@
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.logo {
+  position: absolute;
+  left: 173px;
+  top: 17px;
+}
+.logo img {
+  width: 30px;
+}
+
+.content {
+  display: flex;
+}
+.content .menu {
+  width: 200px;
+}
+.content .menu .menu-fly {
+  position: fixed;
+}
+.content .menu .menu-fly .menu-button .icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+}
+.content .menu .menu-fly .menu-button .frog {
+  background-image: url(icons/frog\ white.png);
+}
+.content .menu .menu-fly .menu-button .frog:hover {
+  background-image: url(icons/frog\ black.png);
+}
+.content .menu .menu-fly .menu-button .plates {
+  background-image: url(icons/plate\ white.png);
+}
+.content .menu .menu-fly .menu-button .plates:hover {
+  background-image: url(icons/plate\ black.png);
+}
+
+.gallery-page {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.gallery-page .items-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #ff002f;
+  border-radius: 6px;
+  margin: 5px;
+}
+.gallery-page .items-container .name {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #ff002f;
+}
+.gallery-page .items-container .image-and-descrintion {
+  display: flex;
+  flex: 1;
+  /*img:hover {
+      max-width: 100%;
+      z-index: 10;
+  }*/
+}
+.gallery-page .items-container .image-and-descrintion img {
+  display: flex;
+  max-width: 200px;
+  height: auto;
+  border-right: solid 1px #ff002f;
+}
+.gallery-page .items-container .image-and-descrintion .description {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.gallery-page .items-container .additional-buttons {
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 1px #ff002f;
+  flex: 1;
+}
+.gallery-page .items-container .additional-buttons .action {
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  flex: 1;
+}
+.gallery-page .items-container .additional-buttons .action:first-child {
+  background-color: aqua;
+  border-bottom-left-radius: 6px;
+  border-right: #ff002f solid 1px;
+}
+.gallery-page .items-container .additional-buttons .action:last-child {
+  background-color: blueviolet;
+  border-bottom-right-radius: 6px;
+  border-left: #ff002f solid 1px;
+}/*# sourceMappingURL=WinterStyles.css.map */

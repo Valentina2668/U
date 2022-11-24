@@ -1,4 +1,9 @@
 @charset "UTF-8";
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   display: flex;
   justify-content: center;
@@ -10,7 +15,8 @@
   left: 173px;
   top: 17px;
 }
-.logo img {
+
+img {
   width: 30px;
 }
 
@@ -22,6 +28,24 @@
 }
 .content .menu .menu-fly {
   position: fixed;
+  /*  .menu-button .li{
+                  display: none;
+              }  убираем всех детей 
+              .menu-button:hover > .li{
+                  display: block; - дети первого поколения
+              */
+}
+.content .menu .menu-fly .menu-button .li {
+  display: none;
+}
+.content .menu .menu-fly .menu-button:hover > .li {
+  display: block;
+}
+.content .menu .menu-fly .menu-button .ul {
+  position: relative;
+  left: 136px;
+  top: -33px;
+  background-color: aliceblue;
 }
 .content .gallery-page {
   display: none;

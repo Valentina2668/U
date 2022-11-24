@@ -1,6 +1,10 @@
 $border-color-container: #ff002f;
 
 
+header {
+    display: flex;
+    justify-content: center;
+}
 
 .title {
     display: flex;
@@ -8,16 +12,20 @@ $border-color-container: #ff002f;
     font-size: 40px;
 }
 
+
+
 .logo {
     position: absolute;
     left: 173px;
     top: 17px;
 
 
-    img {
-        width: 30px;
-    }
 }
+
+img {
+    width: 30px;
+}
+
 
 
 .content {
@@ -29,10 +37,32 @@ $border-color-container: #ff002f;
         .menu-fly {
             position: fixed;
 
+            .menu-button .li{
+                display: none;
+            }
+/*  .menu-button .li{
+                display: none;
+            }  убираем всех детей 
+            .menu-button:hover > .li{
+                display: block; - дети первого поколения
+            */
+            .menu-button:hover > .li{
+                display: block;
+            }
+            .menu-button {
+                .ul {
+                    position: relative;
+                    left: 136px;
+                    top: -33px;
+                    background-color: aliceblue;
+                }
+            }
 
         }
 
     }
+
+
 
     .gallery-page {
         display: none;
@@ -119,8 +149,9 @@ $border-color-container: #ff002f;
 
     .hot-key-block {
         display: none;
-        &:target{
-            display:flex;
+
+        &:target {
+            display: flex;
         }
 
         .hot-key {
@@ -171,9 +202,5 @@ $border-color-container: #ff002f;
             border-color: #f70505;
             color: #f70505;
         }
-       
-
     }
-
-
 }

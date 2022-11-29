@@ -19,12 +19,12 @@ header {
     left: 173px;
     top: 17px;
 
-
+    img {
+        width: 30px;
+    }
 }
 
-img {
-    width: 30px;
-}
+
 
 
 
@@ -37,18 +37,14 @@ img {
         .menu-fly {
             position: fixed;
 
-            .menu-button .li{
+            .menu-button .li {
                 display: none;
             }
-/*  .menu-button .li{
-                display: none;
-            }  убираем всех детей 
-            .menu-button:hover > .li{
-                display: block; - дети первого поколения
-            */
-            .menu-button:hover > .li{
+
+            .menu-button:hover>.li {
                 display: block;
             }
+
             .menu-button {
                 .ul {
                     position: relative;
@@ -73,15 +69,22 @@ img {
             flex: 1;
         }
 
-
-
         .items-container {
             width: 400px;
+            height: 200px;
             display: flex;
             flex-direction: column;
             border: solid 1px $border-color-container;
             border-radius: 6px;
             margin: 5px;
+
+            &.wide-x-2 {
+                width: 800px;
+            }
+
+            &.wide-x-3 {
+                width: 1200px
+            }
 
             &:target {
                 /*& - посмотри класс родителя(item-conteiner) :target - если сослались при помощи якоря то*/
@@ -97,27 +100,59 @@ img {
 
             .image-and-descrintion {
                 display: flex;
-                flex: 1;
 
-                img {
-                    display: flex;
-                    max-width: 200px;
-                    height: auto;
+                height: 152px;
+
+                .image {
                     border-right: solid 1px $border-color-container;
+                    display: flex;
+                    justify-content: center;
+                    flex: 1;
 
+
+
+                    img {
+                        display: flex;
+
+                        justify-content: center;
+                        max-width: 200px;
+                        max-height: 100%;
+
+
+                    }
+
+                    img:hover {
+                        transform: scale(1.5);
+                    }
                 }
 
-                img:hover {
-                    transform: scale(1.5);
-                }
 
                 .description {
                     display: flex;
+                    flex: 1;
                     justify-content: center;
                     padding: 5px;
+                    overflow: auto;
+                    max-width: 200px;
+                    max-height: 100%;
+                    height: 144px;
+                    ;
                 }
 
             }
+
+            .descr {
+                display: flex;
+
+                justify-content: center;
+                padding: 5px;
+                overflow: auto;
+                max-width: 100%;
+                max-height: 100%;
+                height: 144px;
+            }
+
+
 
             .additional-buttons {
                 display: flex;
@@ -144,7 +179,21 @@ img {
                     border-left: $border-color-container solid 1px;
                 }
             }
+
+            .text {
+                display: flex;
+
+                justify-content: center;
+                padding: 5px;
+                margin: 5px;
+                overflow: auto;
+                max-width: 100%;
+                max-height: 100%;
+
+            }
         }
+
+
     }
 
     .hot-key-block {

@@ -80,10 +80,18 @@ header {
 
             &.wide-x-2 {
                 width: 800px;
+
+                .image-and-descrintion {
+                    .image {
+                        border-right: none;
+                    }
+                }
+
             }
 
             &.wide-x-3 {
                 width: 1200px
+                
             }
 
             &:target {
@@ -102,6 +110,14 @@ header {
                 display: flex;
 
                 height: 152px;
+
+
+                .image {
+                    &.no-description {
+                        border-right: none;
+
+                    }
+                }
 
                 .image {
                     border-right: solid 1px $border-color-container;

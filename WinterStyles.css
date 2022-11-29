@@ -91,6 +91,10 @@ header {
   width: 800px;
 }
 
+.content .gallery-page .items-container.wide-x-2 .image-and-descrintion .image {
+  border-right: none;
+}
+
 .content .gallery-page .items-container.wide-x-3 {
   width: 1200px;
 }
@@ -115,6 +119,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   height: 152px;
+}
+
+.content .gallery-page .items-container .image-and-descrintion .image.no-description {
+  border-right: none;
 }
 
 .content .gallery-page .items-container .image-and-descrintion .image {

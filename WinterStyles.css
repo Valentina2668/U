@@ -1,20 +1,15 @@
 @charset "UTF-8";
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+}
+header audio {
+  margin: 10px;
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 40px;
 }
 
@@ -23,229 +18,144 @@ header {
   left: 173px;
   top: 17px;
 }
-
 .logo img {
   width: 30px;
 }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .content .menu {
   width: 200px;
 }
-
 .content .menu .menu-fly {
   position: fixed;
 }
-
 .content .menu .menu-fly .menu-button .li {
   display: none;
 }
-
 .content .menu .menu-fly .menu-button:hover > .li {
   display: block;
 }
-
 .content .menu .menu-fly .menu-button .ul {
   position: relative;
   left: 136px;
   top: -33px;
   background-color: aliceblue;
 }
-
 .content .gallery-page {
   display: none;
 }
-
 .content .gallery-page:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex-wrap: wrap;
+  flex: 1;
 }
-
 .content .gallery-page .items-container {
   width: 400px;
   height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: solid 1px #ff002f;
   border-radius: 6px;
   margin: 5px;
 }
-
 .content .gallery-page .items-container.wide-x-2 {
   width: 800px;
 }
-
 .content .gallery-page .items-container.wide-x-2 .image-and-descrintion .image {
   border-right: none;
 }
-
 .content .gallery-page .items-container.wide-x-3 {
   width: 1200px;
 }
-
 .content .gallery-page .items-container:target {
   /*& - посмотри класс родителя(item-conteiner) :target - если сослались при помощи якоря то*/
   background-color: pink;
 }
-
 .content .gallery-page .items-container .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-bottom: solid 1px #ff002f;
 }
-
 .content .gallery-page .items-container .image-and-descrintion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 152px;
 }
-
 .content .gallery-page .items-container .image-and-descrintion .image.no-description {
   border-right: none;
 }
-
 .content .gallery-page .items-container .image-and-descrintion .image {
   border-right: solid 1px #ff002f;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  justify-content: center;
+  flex: 1;
 }
-
 .content .gallery-page .items-container .image-and-descrintion .image img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   max-width: 200px;
   max-height: 100%;
 }
-
 .content .gallery-page .items-container .image-and-descrintion .image img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
-
 .content .gallery-page .items-container .image-and-descrintion .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: 1;
+  justify-content: center;
   padding: 5px;
   overflow: auto;
   max-width: 200px;
   max-height: 100%;
   height: 144px;
 }
-
 .content .gallery-page .items-container .descr {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 5px;
   overflow: auto;
   max-width: 100%;
   max-height: 100%;
   height: 144px;
 }
-
 .content .gallery-page .items-container .additional-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border-top: solid 1px #ff002f;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .content .gallery-page .items-container .additional-buttons .action {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: bisque;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .content .gallery-page .items-container .additional-buttons .action:first-child {
-  background-color: #527ca7;
+  background-color: rgb(82, 124, 167);
   border-bottom-left-radius: 6px;
   border-right: #ff002f solid 1px;
 }
-
 .content .gallery-page .items-container .additional-buttons .action:last-child {
-  background-color: #527ca7;
+  background-color: rgb(82, 124, 167);
   border-bottom-right-radius: 6px;
   border-left: #ff002f solid 1px;
 }
-
 .content .gallery-page .items-container .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 5px;
   margin: 5px;
   overflow: auto;
   max-width: 100%;
   max-height: 100%;
 }
-
 .content .hot-key-block {
   display: none;
 }
-
 .content .hot-key-block:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .content .hot-key-block .hot-key {
   border: 1px solid #ff002f;
   border-radius: 4px;
@@ -253,47 +163,33 @@ header {
   padding: 2px;
   font-size: 20px;
 }
-
 .content .newpage {
   display: none;
 }
-
 .content .newpage:target {
   display: block;
 }
-
 .content .newpage .wish {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 20px;
   background-color: aquamarine;
 }
-
 .content .newpage .liketoget {
   border: 1px #ff002f solid;
   padding: 10px;
 }
-
 .content .newpage .expect {
   border-right: 1px #ff002f solid;
   border-left: 1px #ff002f solid;
   border-bottom: 1px #ff002f solid;
   padding: 10px;
 }
-
 .content .newpage .youare {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
-
 .content .newpage .text {
   border-color: #f70505;
   color: #f70505;
-}
-/*# sourceMappingURL=WinterStyles.css.map */
+}/*# sourceMappingURL=WinterStyles.css.map */

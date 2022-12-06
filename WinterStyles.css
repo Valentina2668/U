@@ -24,6 +24,7 @@ header audio {
 
 .content {
   display: flex;
+  flex: 1;
 }
 .content .menu {
   width: 200px;
@@ -43,15 +44,19 @@ header audio {
   top: -33px;
   background-color: aliceblue;
 }
-.content .gallery-page {
+.content .central-block {
+  display: flex;
+  flex: 1;
+}
+.content .central-block .gallery-page {
   display: none;
 }
-.content .gallery-page:target {
+.content .central-block .gallery-page:target {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
 }
-.content .gallery-page .items-container {
+.content .central-block .gallery-page .items-container {
   width: 400px;
   height: 200px;
   display: flex;
@@ -60,47 +65,47 @@ header audio {
   border-radius: 6px;
   margin: 5px;
 }
-.content .gallery-page .items-container.wide-x-2 {
-  width: 800px;
+.content .central-block .gallery-page .items-container.wide-x-2 {
+  width: 600px;
 }
-.content .gallery-page .items-container.wide-x-2 .image-and-descrintion .image {
+.content .central-block .gallery-page .items-container.wide-x-2 .image-and-descrintion .image {
   border-right: none;
 }
-.content .gallery-page .items-container.wide-x-3 {
-  width: 1200px;
+.content .central-block .gallery-page .items-container.wide-x-3 {
+  width: 900px;
 }
-.content .gallery-page .items-container:target {
+.content .central-block .gallery-page .items-container:target {
   /*& - посмотри класс родителя(item-conteiner) :target - если сослались при помощи якоря то*/
   background-color: pink;
 }
-.content .gallery-page .items-container .name {
+.content .central-block .gallery-page .items-container .name {
   display: flex;
   justify-content: center;
   border-bottom: solid 1px #ff002f;
 }
-.content .gallery-page .items-container .image-and-descrintion {
+.content .central-block .gallery-page .items-container .image-and-descrintion {
   display: flex;
   height: 152px;
 }
-.content .gallery-page .items-container .image-and-descrintion .image.no-description {
+.content .central-block .gallery-page .items-container .image-and-descrintion .image.no-description {
   border-right: none;
 }
-.content .gallery-page .items-container .image-and-descrintion .image {
+.content .central-block .gallery-page .items-container .image-and-descrintion .image {
   border-right: solid 1px #ff002f;
   display: flex;
   justify-content: center;
   flex: 1;
 }
-.content .gallery-page .items-container .image-and-descrintion .image img {
+.content .central-block .gallery-page .items-container .image-and-descrintion .image img {
   display: flex;
   justify-content: center;
   max-width: 200px;
   max-height: 100%;
 }
-.content .gallery-page .items-container .image-and-descrintion .image img:hover {
+.content .central-block .gallery-page .items-container .image-and-descrintion .image img:hover {
   transform: scale(1.5);
 }
-.content .gallery-page .items-container .image-and-descrintion .description {
+.content .central-block .gallery-page .items-container .image-and-descrintion .description {
   display: flex;
   flex: 1;
   justify-content: center;
@@ -110,7 +115,7 @@ header audio {
   max-height: 100%;
   height: 144px;
 }
-.content .gallery-page .items-container .descr {
+.content .central-block .gallery-page .items-container .descr {
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -119,29 +124,29 @@ header audio {
   max-height: 100%;
   height: 144px;
 }
-.content .gallery-page .items-container .additional-buttons {
+.content .central-block .gallery-page .items-container .additional-buttons {
   display: flex;
   justify-content: space-around;
   border-top: solid 1px #ff002f;
   flex: 1;
 }
-.content .gallery-page .items-container .additional-buttons .action {
+.content .central-block .gallery-page .items-container .additional-buttons .action {
   display: flex;
   justify-content: center;
   background-color: bisque;
   flex: 1;
 }
-.content .gallery-page .items-container .additional-buttons .action:first-child {
+.content .central-block .gallery-page .items-container .additional-buttons .action:first-child {
   background-color: rgb(82, 124, 167);
   border-bottom-left-radius: 6px;
   border-right: #ff002f solid 1px;
 }
-.content .gallery-page .items-container .additional-buttons .action:last-child {
+.content .central-block .gallery-page .items-container .additional-buttons .action:last-child {
   background-color: rgb(82, 124, 167);
   border-bottom-right-radius: 6px;
   border-left: #ff002f solid 1px;
 }
-.content .gallery-page .items-container .text {
+.content .central-block .gallery-page .items-container .text {
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -150,46 +155,63 @@ header audio {
   max-width: 100%;
   max-height: 100%;
 }
-.content .hot-key-block {
+.content .central-block .hot-key-block {
   display: none;
 }
-.content .hot-key-block:target {
+.content .central-block .hot-key-block:target {
   display: flex;
 }
-.content .hot-key-block .hot-key {
+.content .central-block .hot-key-block .hot-key {
   border: 1px solid #ff002f;
   border-radius: 4px;
   margin: 5px;
   padding: 2px;
   font-size: 20px;
 }
-.content .newpage {
+.content .central-block .newpage {
   display: none;
 }
-.content .newpage:target {
+.content .central-block .newpage:target {
   display: block;
 }
-.content .newpage .wish {
+.content .central-block .newpage .wish {
   display: flex;
   justify-content: center;
   font-size: 20px;
   background-color: aquamarine;
 }
-.content .newpage .liketoget {
+.content .central-block .newpage .liketoget {
   border: 1px #ff002f solid;
   padding: 10px;
 }
-.content .newpage .expect {
+.content .central-block .newpage .expect {
   border-right: 1px #ff002f solid;
   border-left: 1px #ff002f solid;
   border-bottom: 1px #ff002f solid;
   padding: 10px;
 }
-.content .newpage .youare {
+.content .central-block .newpage .youare {
   display: flex;
   margin-top: 10px;
 }
-.content .newpage .text {
+.content .central-block .newpage .text {
   border-color: #f70505;
   color: #f70505;
+}
+.content .central-block .youtube-videos {
+  display: none;
+}
+.content .central-block .youtube-videos:target {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.content .central-block .youtube-videos .video {
+  width: 300px;
+}
+.content .central-block .youtube-videos .video iframe {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=WinterStyles.css.map */

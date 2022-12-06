@@ -37,6 +37,9 @@ header audio {
 }
 .content .menu .menu-fly .menu-button:hover > .li {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .content .menu .menu-fly .menu-button .ul {
   position: relative;
